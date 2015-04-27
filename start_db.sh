@@ -17,4 +17,5 @@ if [[ ! -f /opt/mysql/initialized ]]; then
     touch /opt/mysql/initialized
 fi
 touch /var/log/mysql/mariadb-slow.log
-tail -f /var/log/mysql.log /var/log/mysql.err /var/log/mysql/mariadb-slow.log
+touch /var/log/mysql/mysql-slow.log
+tail -f /var/log/mysql.log /var/log/mysql.err /var/log/mysql/mysql-slow.log /var/log/mysql/mariadb-slow.log
